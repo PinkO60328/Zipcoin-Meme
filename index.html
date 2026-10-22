@@ -1,0 +1,111 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>zipcoin ($ZC) · The coin from Snowmoon, on Robinhood Chain</title>
+<meta name="description" content="$ZC: a community tribute to the private currency from the novel Snowmoon, on Robinhood Chain.">
+<meta property="og:image" content="/img/hero.jpg"><link rel="icon" href="/img/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a1424;--bg2:#101f38;--ice:#cfe3f5;--silver:#e6edf5;--blue:#5fa8e8;--sun:#ff9a5a;--sun2:#ffcf7a}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Inter,sans-serif;background:radial-gradient(ellipse at top,#1b3358,var(--bg) 60%);color:var(--silver);line-height:1.6;overflow-x:hidden}
+#snow{position:fixed;inset:0;pointer-events:none;z-index:0}
+a{color:inherit}.wrap{max-width:1150px;margin:auto;padding:0 20px;position:relative;z-index:1}
+h1,h2,h3{font-family:Cinzel,serif;letter-spacing:.04em}
+h2{font-size:clamp(28px,4vw,44px);text-align:center;margin-bottom:12px;background:linear-gradient(90deg,var(--silver),var(--blue),var(--sun2));-webkit-background-clip:text;color:transparent}
+.sub{text-align:center;color:var(--ice);opacity:.8;max-width:680px;margin:0 auto 40px}
+nav{position:sticky;top:0;z-index:10;background:rgba(10,20,36,.75);backdrop-filter:blur(10px);border-bottom:1px solid rgba(207,227,245,.12)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;gap:10px;align-items:center;font-family:Cinzel;font-weight:800;text-decoration:none}
+.brand img{width:38px;height:38px;border-radius:50%;object-fit:cover}
+.links{display:flex;gap:22px;align-items:center}.links a{text-decoration:none;font-size:14px;opacity:.85}
+.btn{display:inline-block;padding:12px 26px;border-radius:999px;font-weight:800;text-decoration:none;border:0;cursor:pointer;font-size:15px;transition:.2s}
+.btn.sun{background:linear-gradient(90deg,var(--sun),var(--sun2));color:#1a1020;box-shadow:0 6px 24px rgba(255,154,90,.35)}
+.btn.ghost{border:1px solid var(--ice);color:var(--silver);background:transparent}.btn:hover{transform:translateY(-2px)}
+.box{position:relative;overflow:hidden;border-radius:18px}.box img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.r169{aspect-ratio:16/9}.r43{aspect-ratio:4/3}.r11{aspect-ratio:1/1}.r31{aspect-ratio:3/1}
+header{padding:60px 0 40px}.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(44px,7vw,84px);line-height:1;background:linear-gradient(180deg,#fff,var(--ice) 50%,var(--blue));-webkit-background-clip:text;color:transparent}
+.hero .tag{color:var(--sun2);font-weight:800;letter-spacing:.2em;font-size:13px;margin-bottom:12px}
+.hero p{margin:18px 0 26px;font-size:18px;color:var(--ice)}
+.coinlogo{width:90px;height:90px;border-radius:50%;margin-bottom:16px;animation:spin 8s linear infinite;box-shadow:0 0 40px rgba(207,227,245,.4)}
+@keyframes spin{0%,100%{transform:rotateY(0)}50%{transform:rotateY(180deg)}}
+.ca{display:flex;align-items:center;gap:10px;margin-top:20px;background:rgba(207,227,245,.08);border:1px solid rgba(207,227,245,.2);padding:8px 8px 8px 16px;border-radius:999px;width:max-content;max-width:100%}
+.ca code{font-size:14px;overflow:hidden;text-overflow:ellipsis}.ca button{background:var(--silver);color:#0a1424;border:0;border-radius:999px;padding:6px 14px;font-weight:800;cursor:pointer}
+.heroimg{box-shadow:0 20px 60px rgba(0,0,0,.5),0 0 0 1px rgba(207,227,245,.15)}
+section{padding:80px 0}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.card{background:linear-gradient(180deg,rgba(26,48,82,.7),rgba(16,31,56,.7));border:1px solid rgba(207,227,245,.12);border-radius:20px;overflow:hidden;transition:.3s}
+.card:hover{transform:translateY(-6px);border-color:var(--sun)}.card .box{border-radius:0}.card .t{padding:18px 20px 22px}.card h3{font-size:19px;margin-bottom:6px;color:#fff}.card p{font-size:14.5px;color:var(--ice);opacity:.85}
+.quote{font-family:Cinzel;font-size:20px;border-left:3px solid var(--sun);padding-left:18px;margin:18px 0;color:#fff}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.step{counter-increment:s;padding:24px;border-radius:18px;background:rgba(207,227,245,.06);border:1px solid rgba(207,227,245,.14)}
+.step:before{content:counter(s);display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:linear-gradient(var(--sun),var(--sun2));color:#1a1020;font-weight:800;margin-bottom:12px}
+.step h3{font-size:17px;margin-bottom:6px}.step p{font-size:14px;color:var(--ice)}
+.tok{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;text-align:center}.tok div{padding:26px 14px;border-radius:18px;background:rgba(207,227,245,.06);border:1px solid rgba(207,227,245,.14)}
+.tok b{display:block;font-family:Cinzel;font-size:22px;color:#fff}.tok span{font-size:13px;color:var(--sun2)}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.gallery .box{border-radius:14px}
+footer{padding:50px 0 40px;text-align:center;border-top:1px solid rgba(207,227,245,.12);font-size:13px;color:var(--ice)}
+footer .banner{max-width:720px;margin:0 auto 24px}
+.reveal{opacity:0;transform:translateY(30px);transition:.8s}.reveal.on{opacity:1;transform:none}
+@media(max-width:860px){.hero,.grid2{grid-template-columns:1fr}.grid3{grid-template-columns:1fr 1fr}.steps,.tok,.gallery{grid-template-columns:1fr 1fr}.links a:not(.btn){display:none}}
+@media(max-width:520px){.grid3,.steps{grid-template-columns:1fr}.hero{text-align:center}.ca{margin:20px auto 0}.links .btn{padding:9px 16px}}
+</style></head><body><canvas id="snow"></canvas>
+<nav><div class="wrap"><a class="brand" href="#"><img src="img/logo.jpg" alt="zipcoin">zipcoin</a>
+<div class="links"><a href="#story">Story</a><a href="#veridia">Veridia</a><a href="#buy">How to Buy</a><a href="#tokenomics">Tokenomics</a><a href="https://x.com/" target="_blank" rel="noopener">X</a><a class="btn sun" href="#">Buy $ZC</a></div></div></nav>
+<header class="wrap"><div class="hero">
+<div class="reveal"><img class="coinlogo" src="img/logo.jpg" alt=""><div class="tag">❄ ROBINHOOD CHAIN · $ZC</div><h1>zipcoin</h1>
+<p>The private money of the Snowmoon world, minted by the community for the real one. Burn it to be heard, send it to the ones you love, spend it without being watched.</p>
+<a class="btn sun" href="#">Buy $ZC</a> <a class="btn ghost" href="https://x.com/" target="_blank" rel="noopener">Join on X</a>
+<div class="ca"><code id="ca">0xCommingSoon</code><button onclick="navigator.clipboard.writeText(document.getElementById('ca').textContent);this.textContent='Copied!';setTimeout(()=>this.textContent='Copy',1500)">Copy</button></div></div>
+<div class="box r169 heroimg reveal"><img src="img/hero.jpg" alt="Silver zipcoin on a snowy peak under the moon"></div></div></header>
+
+<section id="story"><div class="wrap grid2">
+<div class="box r43 reveal"><img src="img/book.jpg" alt="The Snowmoon novel"></div>
+<div class="reveal"><h2 style="text-align:left">A coin from a novel</h2>
+<p>In <i>Snowmoon</i>, Vitalik Buterin's novel, people pay with zipcoin. It's private money in a world of cameras, reputation scores, and cities that vote on everything, including your taxes.</p>
+<p class="quote">"50 zipcoins have just been burned."</p>
+<p>A knock nobody answers. A watch that buzzes. A message nobody can ignore, because someone burned real money to send it. $ZC is a fan-made tribute to that idea, now on Robinhood Chain.</p></div></div></section>
+
+<section id="veridia"><div class="wrap"><h2>Life in Veridia</h2><p class="sub">Scenes from the Snowmoon world, the kind of stuff zipcoin gets used for.</p>
+<div class="grid3">
+<div class="card reveal"><div class="box r169"><img src="img/traveler.jpg" alt=""></div><div class="t"><h3>Burn to be heard</h3><p>Want a message to matter? Burn zipcoins with it. 50 for a knock. 400 to find someone. The cost is the signature.</p></div></div>
+<div class="card reveal"><div class="box r169"><img src="img/market.jpg" alt=""></div><div class="t"><h3>Everything has a price</h3><p>Salads, starter packs, building taxes voted on by how nice your house looks. Ugly costs extra.</p></div></div>
+<div class="card reveal"><div class="box r169"><img src="img/tower.jpg" alt=""></div><div class="t"><h3>Reputation is credit</h3><p>Payment declined? Take a loan backed by your name. In Veridia your credit score is what your students think of you.</p></div></div>
+<div class="card reveal"><div class="box r169"><img src="img/speed.jpg" alt=""></div><div class="t"><h3>Money for family</h3><p>Her kids are stuck in another city, so she sends them zipcoins for their expenses. No banks, no waiting.</p></div></div>
+<div class="card reveal"><div class="box r169"><img src="img/chain.jpg" alt=""></div><div class="t"><h3>Open is cheaper</h3><p>Build something open, private and transparent and your tax drops to zero. Vote the rates from your sofa.</p></div></div>
+<div class="card reveal"><div class="box r169"><img src="img/hero.jpg" alt=""></div><div class="t"><h3>Loyalty over bounty</h3><p>The network offered him a bounty to report his friend. He walked away. Some things don't have a price.</p></div></div>
+</div></div></section>
+
+<section><div class="wrap grid2">
+<div class="reveal"><h2 style="text-align:left">Private by default</h2>
+<p>Snowmoon has privacy robes with uneven shoes so cameras can't recognise how you walk. We're not that dramatic. $ZC is just a meme coin that loves the idea: money that's yours, and nobody else's business.</p>
+<p style="margin-top:14px;opacity:.8">If payments are truly anon, how did they find him six months later? Read the book. 👀</p></div>
+<div class="grid2" style="gap:14px"><div class="box r11 reveal"><img src="img/shield.jpg" alt=""></div><div class="box r11 reveal"><img src="img/moon.jpg" alt=""></div></div></div></section>
+
+<section id="buy"><div class="wrap"><h2>How to Buy on Robinhood Chain</h2><p class="sub">The steps once $ZC is live. Always copy the CA from this site or our official X.</p>
+<div class="steps">
+<div class="step reveal"><h3>Get a wallet</h3><p>Install an EVM wallet that supports Robinhood Chain and add the network.</p></div>
+<div class="step reveal"><h3>Add ETH</h3><p>Bridge or move ETH onto Robinhood Chain to pay for the swap and gas.</p></div>
+<div class="step reveal"><h3>Find a DEX</h3><p>Open a DEX that runs on Robinhood Chain and connect your wallet.</p></div>
+<div class="step reveal"><h3>Swap for $ZC</h3><p>Paste the $ZC contract address, set your amount, and swap. Welcome to Veridia.</p></div>
+</div></div></section>
+
+<section id="tokenomics"><div class="wrap grid2">
+<div class="box r43 reveal"><img src="img/vault.jpg" alt="Ice vault"></div>
+<div class="reveal"><h2 style="text-align:left">Tokenomics</h2><p style="margin-bottom:20px">Full details are announced at launch. No made-up numbers here.</p>
+<div class="tok" style="grid-template-columns:1fr 1fr"><div><b>$ZC</b><span>Symbol</span></div><div><b>Robinhood</b><span>Chain</span></div><div><b>TBA</b><span>Supply</span></div><div><b>TBA</b><span>Tax</span></div></div></div></div></section>
+
+<section><div class="wrap"><h2>Snowmoon Gallery</h2><p class="sub">Silver coins, cold peaks, warm sunsets.</p>
+<div class="gallery">
+<div class="box r11 reveal"><img src="img/moon.jpg" alt=""></div><div class="box r11 reveal"><img src="img/traveler.jpg" alt=""></div><div class="box r11 reveal"><img src="img/market.jpg" alt=""></div><div class="box r11 reveal"><img src="img/chain.jpg" alt=""></div>
+<div class="box r11 reveal"><img src="img/vault.jpg" alt=""></div><div class="box r11 reveal"><img src="img/speed.jpg" alt=""></div><div class="box r11 reveal"><img src="img/book.jpg" alt=""></div><div class="box r11 reveal"><img src="img/shield.jpg" alt=""></div>
+</div></div></section>
+
+<footer><div class="wrap"><div class="box r31 banner"><img src="img/banner.jpg" alt="zipcoin banner"></div>
+<p style="margin-bottom:14px"><a class="btn sun" href="#">Buy $ZC</a> <a class="btn ghost" href="https://x.com/" target="_blank" rel="noopener">X</a></p>
+<p>Community tribute, not affiliated with @zipcoin_eth or Vitalik Buterin. Not financial advice.</p><p style="opacity:.6;margin-top:6px">© 2026 zipcoin ($ZC)</p></div></footer>
+<script>
+const io=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('on')),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const c=document.getElementById('snow'),g=c.getContext('2d');let W,H,f=[];function rs(){W=c.width=innerWidth;H=c.height=innerHeight}rs();addEventListener('resize',rs);
+for(let i=0;i<90;i++)f.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*2+.5,s:Math.random()*.6+.3,d:Math.random()*.6-.3});
+(function a(){g.clearRect(0,0,W,H);g.fillStyle='rgba(230,240,250,.8)';f.forEach(p=>{p.y+=p.s;p.x+=p.d;if(p.y>H){p.y=-5;p.x=Math.random()*W}g.beginPath();g.arc(p.x,p.y,p.r,0,7);g.fill()});requestAnimationFrame(a)})();
+</script></body></html>
